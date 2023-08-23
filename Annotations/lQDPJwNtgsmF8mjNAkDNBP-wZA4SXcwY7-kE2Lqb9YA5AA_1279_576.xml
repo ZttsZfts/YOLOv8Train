@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>lQDPJwNtgsmF8mjNAkDNBP-wZA4SXcwY7-kE2Lqb9YA5AA_1279_576.jpg</filename>
+	<path>D:\YOLOv8Label\images\lQDPJwNtgsmF8mjNAkDNBP-wZA4SXcwY7-kE2Lqb9YA5AA_1279_576.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1279</width>
+		<height>576</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>mark1</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>526</xmin>
+			<ymin>22</ymin>
+			<xmax>987</xmax>
+			<ymax>450</ymax>
+		</bndbox>
+	</object>
+</annotation>

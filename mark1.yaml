@@ -1,0 +1,9 @@
+train: D:\YOLOv8Label\train.txt
+val: D:\YOLOv8Label\val.txt
+test: D:\YOLOv8Label\test.txt
+
+# number of classes
+nc: 1
+
+# class names
+names: ['mark1']
