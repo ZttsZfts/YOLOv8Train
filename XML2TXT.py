@@ -28,12 +28,12 @@ def convert(size, box): # size:(原图w,原图h) , box:(xmin,xmax,ymin,ymax)
 
 # year ='2012', 对应图片的id（文件名）
 def convert_annotation(image_id):
-    '''
+    """
     将对应文件名的xml文件转化为label文件，xml文件包含了对应的bunding框以及图片长款大小等信息，
     通过对其解析，然后进行归一化最终读到label文件中去，也就是说
     一张图片文件对应一个xml文件，然后通过解析和归一化，能够将对应的信息保存到唯一一个label文件中去
     labal文件中的格式：calss x y w h　　同时，一张图片对应的类别有多个，所以对应的ｂｕｎｄｉｎｇ的信息也有多个
-    '''
+    """
     # 对应的通过year 找到相应的文件夹，并且打开相应image_id的xml文件，其对应bund文件
     in_file = open(wd+'/Annotations/%s.xml' % (image_id), encoding='utf-8')
     # 准备在对应的image_id 中写入对应的label，分别为
