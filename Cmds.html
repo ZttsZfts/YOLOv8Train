@@ -12,7 +12,7 @@
 模型预测（调用摄像机）
 <pre><code>yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=0 device=0</code></pre>
 模型导出onnx
-<pre><code>yolo task=detect mode=export model=runs/detect/train/weights/best.pt format=onnx</code></pre>
+<pre><code>yolo task=detect mode=export model=runs/detect/train/weights/best.pt format=onnx opset=10</code></pre>
 
 </body>
 </html>
