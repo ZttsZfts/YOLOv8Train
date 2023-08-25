@@ -35,7 +35,7 @@ def convert_annotation(image_id):
     in_file = open(wd + '/Annotations/%s.xml' % (image_id), encoding='utf-8')
     # 准备在对应的image_id 中写入对应的label，分别为
     # <object-class> <x> <y> <width> <height>
-    out_file = open(wd + '/labels/%s.txt' % (image_id), 'w', encoding='utf-8')
+    out_file = open(wd + '/Labels/%s.txt' % (image_id), 'w', encoding='utf-8')
     # 解析xml文件
     tree = ET.parse(in_file)
     # 获得对应的键值对
@@ -86,8 +86,8 @@ for image_set in sets:
     　　　　　最后再通过直接读取文件，就能找到对应的label 信息
     '''
     # 先找labels文件夹如果不存在则创建
-    if not os.path.exists(wd + '/labels/'):
-        os.makedirs(wd + '/labels/')
+    if not os.path.exists(wd + '/Labels/'):
+        os.makedirs(wd + '/Labels/')
     # 读取在ImageSets/Main 中的train、test..等文件的内容
     # 包含对应的文件名称
     image_ids = open(wd + '/ImageSets/%s.txt' % (image_set)).read().strip().split()
@@ -95,7 +95,7 @@ for image_set in sets:
     list_file = open(wd + '/%s.txt' % (image_set), 'w')
     # 将对应的文件_id以及全路径写进去并换行
     for image_id in image_ids:
-        list_file.write(wd + '/images/%s.jpg\n' % (image_id))
+        list_file.write(wd + '/Images/%s.jpg\n' % (image_id))
         # 调用  year = 年份  image_id = 对应的文件名_id
         convert_annotation(image_id)
     # 关闭文件

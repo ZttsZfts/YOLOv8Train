@@ -1,3 +1,7 @@
 /.idea/
-/runs/
-*.cache
+/YOLOv8Train/runs/
+/YOLOv8Train/*.cache
+/YOLOv8Train/ImageSets/*.*
+/YOLOv8Train/test.txt
+/YOLOv8Train/train.txt
+/YOLOv8Train/val.txt
