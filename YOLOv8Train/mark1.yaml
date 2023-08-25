@@ -1,9 +1,0 @@
-train: D:\yolov8\YOLOv8Train\train.txt
-val: D:\yolov8\YOLOv8Train\val.txt
-test: D:\yolov8\YOLOv8Train\test.txt
-
-# number of classes
-nc: 1
-
-# class names
-names: ['mark1']

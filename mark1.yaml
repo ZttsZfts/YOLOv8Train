@@ -1,0 +1,9 @@
+train: D:\yolov8\train.txt
+val: D:\yolov8\val.txt
+test: D:\yolov8\test.txt
+
+# number of classes
+nc: 1
+
+# class names
+names: ['mark1']
