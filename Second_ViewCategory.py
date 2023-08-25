@@ -1,7 +1,7 @@
 import os
-from unicodedata import name
 import xml.etree.ElementTree as ET
 import glob
+
 
 def count_num(indir):
     label_list = []
@@ -38,6 +38,5 @@ def count_num(indir):
 cwd = os.getcwd()
 if __name__ == '__main__':
     # xml文件所在的目录，修改此处
-    indir = cwd+'/Annotations'
+    indir = cwd + '/Annotations'
     count_num(indir)  # 调用函数统计各类标签数目
-

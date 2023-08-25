@@ -3,11 +3,10 @@ import random
 
 cwd = os.getcwd()
 
-
 trainval_percent = 0.9
 train_percent = 0.9
-xmlfilepath = cwd+'/Annotations'
-txtsavepath = cwd+'/ImageSets'
+xmlfilepath = cwd + '/Annotations'
+txtsavepath = cwd + '/ImageSets'
 total_xml = os.listdir(xmlfilepath)
 
 num = len(total_xml)
@@ -17,10 +16,10 @@ tr = int(tv * train_percent)
 trainval = random.sample(list, tv)
 train = random.sample(trainval, tr)
 
-ftrainval = open(cwd+'/ImageSets/trainval.txt', 'w')
-ftest = open(cwd+'/ImageSets/test.txt', 'w')
-ftrain = open(cwd+'/ImageSets/train.txt', 'w')
-fval = open(cwd+'/ImageSets/val.txt', 'w')
+ftrainval = open(cwd + '/ImageSets/trainval.txt', 'w')
+ftest = open(cwd + '/ImageSets/test.txt', 'w')
+ftrain = open(cwd + '/ImageSets/train.txt', 'w')
+fval = open(cwd + '/ImageSets/val.txt', 'w')
 
 for i in list:
     name = total_xml[i][:-4] + '\n'
