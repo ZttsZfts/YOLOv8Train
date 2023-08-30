@@ -5,7 +5,7 @@ import os
 from os import getcwd
 
 sets = ['train', 'test', 'val']
-classes = ['mark1']
+classes = ['mark1', 'mark2']
 
 
 # 进行归一化操作
